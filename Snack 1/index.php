@@ -47,7 +47,7 @@ if (!array_key_exists("age", $_GET) || strlen(trim($_GET['age'])) === 0) {
 <body>
     <h2>Nome: <?php echo $name ?></h2>
     <h2>Mail: <?php echo $mail ?></h2>
-    <h2>Età: <?php echo $age ?></h2>
+    <h2>Età: <?php echo $age ?> anni</h2>
 </body>
 
 </html>
