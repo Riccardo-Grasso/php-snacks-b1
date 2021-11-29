@@ -16,11 +16,13 @@ $array = [];
 <body>
     <h2> 15 numeri random:
         <?php
-
-        for ($i = 0; $i < 15; $i++) {
-            while (count($array) < 15) {
-                $array[] = rand(1, 100);
+        while (count($array) < 15) {
+            $numeroRandom = rand(1, 100);
+            if (!in_array($numeroRandom, $array)) {
+                $array[] = $numeroRandom;
             }
+        }
+        for ($i = 0; $i < count($array); $i++) {
             echo $array[$i] . " ";
         }
         ?>
